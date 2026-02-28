@@ -46,13 +46,33 @@
 
                     <!-- Mobile Menu Button -->
                     <div class="md:hidden flex items-center">
-                        <button class="text-cafe-woodDark hover:text-cafe-olive focus:outline-none">
+                        <button id="mobile-menu-button" aria-label="Toggle menu"
+                            class="text-cafe-woodDark hover:text-cafe-olive focus:outline-none">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                     d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
                     </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden md:hidden bg-cafe-beige border-t border-cafe-wood/10 absolute w-full left-0 top-full">
+                <div class="px-6 pt-4 pb-8 space-y-6 shadow-2xl flex flex-col">
+                    <a href="#about"
+                        class="block text-sm uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors mobile-link">About</a>
+                    <a href="#menu"
+                        class="block text-sm uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors mobile-link">Menu</a>
+                    <a href="#gallery"
+                        class="block text-sm uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors mobile-link">Ambience</a>
+                    <a href="#testimonials"
+                        class="block text-sm uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors mobile-link">Reviews</a>
+                    <a href="https://www.zomato.com/pune/olivias-cafe-and-bistro-pashan/order?v=o2" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-center px-7 py-4 mt-4 bg-cafe-woodDark text-cafe-beige text-xs uppercase tracking-[0.15em] font-medium shadow-soft">Order
+                        Online</a>
                 </div>
             </div>
         </nav>
@@ -90,7 +110,7 @@
             </div>
 
             <a href="#about"
-                class="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 animate-bounce text-cafe-beige/70 hover:text-cafe-goldSoft transition-colors">
+                class="hidden md:block absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 animate-bounce text-cafe-beige/70 hover:text-cafe-goldSoft transition-colors">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                         d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
