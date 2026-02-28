@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cafe-beige text-cafe-woodDark antialiased;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(111, 78, 55, 0.08);
+  }
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+}

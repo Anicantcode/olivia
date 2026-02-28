@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Olivia's Cafe and Bistro</title>
+</head>
+
+<body class="font-sans">
+    <div id="app" class="font-sans text-cafe-woodDark bg-cafe-beige uppercase-tracking-widest">
+
+        <!-- Navigation -->
+        <nav
+            class="fixed w-full z-50 bg-cafe-beige/90 backdrop-blur-md border-b border-cafe-wood/10 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-24">
+                    <!-- Logo -->
+                    <a href="#" class="font-serif text-3xl font-bold tracking-[0.1em] text-cafe-woodDark leading-none">
+                        Olivia's<br><span
+                            class="text-xs font-sans tracking-[0.3em] font-light text-cafe-wood uppercase mt-1 block">Cafe
+                            & Bistro</span>
+                    </a>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-10">
+                        <a href="#about"
+                            class="text-xs uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors">About</a>
+                        <a href="#menu"
+                            class="text-xs uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors">Menu</a>
+                        <a href="#gallery"
+                            class="text-xs uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors">Ambience</a>
+                        <a href="#testimonials"
+                            class="text-xs uppercase tracking-[0.15em] font-medium hover:text-cafe-olive transition-colors">Reviews</a>
+                        <a href="https://www.zomato.com/pune/olivias-cafe-and-bistro-pashan/order?v=o2" target="_blank"
+                            rel="noopener noreferrer"
+                            class="px-7 py-3 bg-cafe-woodDark text-cafe-beige text-xs uppercase tracking-[0.15em] font-medium hover:bg-cafe-wood transition-colors shadow-soft">Order
+                            Online</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="text-cafe-woodDark hover:text-cafe-olive focus:outline-none">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop"
+                    class="w-full h-full object-cover scale-105 animate-[slow-pan_30s_ease-in-out_infinite_alternate]"
+                    alt="Cafe Interior" />
+                <div class="absolute inset-0 bg-cafe-gradient mix-blend-multiply opacity-80"></div>
+                <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10 text-cafe-woodDark">
+                <p
+                    class="text-cafe-goldSoft text-sm md:text-base uppercase tracking-[0.3em] font-medium mb-6 opacity-90 drop-shadow-md">
+                    Est. 2024 • A Cozy Modern Rustic Escape</p>
+                <h1 class="font-serif text-6xl md:text-8xl text-cafe-beige mb-6 leading-[1.1] drop-shadow-lg">
+                    Where Every Cup<br> <span class="italic font-light text-cafe-goldSoft">Tells a Story</span>
+                </h1>
+                <p
+                    class="text-lg md:text-xl font-light tracking-wide mb-12 max-w-2xl mx-auto text-cafe-beige/90 drop-shadow-md">
+                    Crafted coffee. Comforting conversations.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#menu"
+                        class="px-10 py-4 bg-cafe-beige text-cafe-woodDark text-sm uppercase tracking-[0.2em] font-semibold hover:bg-cafe-goldSoft transition-colors shadow-soft w-full sm:w-auto">View
+                        Menu</a>
+                    <a href="#contact"
+                        class="px-10 py-4 border border-cafe-beige text-cafe-beige text-sm uppercase tracking-[0.2em] font-semibold hover:bg-cafe-beige hover:text-cafe-woodDark transition-colors w-full sm:w-auto backdrop-blur-sm">Visit
+                        Us</a>
+                </div>
+            </div>
+
+            <a href="#about"
+                class="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 animate-bounce text-cafe-beige/70 hover:text-cafe-goldSoft transition-colors">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-cafe-beige relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="relative max-h-[600px] overflow-hidden rounded-2xl shadow-soft group">
+                        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                            alt="Cafe Barista Pouring Coffee">
+                        <div
+                            class="absolute inset-0 border-[1px] border-cafe-beige/20 rounded-2xl m-4 pointer-events-none">
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <h2 class="font-serif text-4xl md:text-5xl text-cafe-woodDark">More Than Just a Cup.</h2>
+                        <div class="w-12 h-[2px] bg-cafe-gold"></div>
+                        <p class="text-cafe-wood/90 text-lg font-light leading-relaxed">
+                            Welcome to Olivia's Cafe & Bistro, where every detail is crafted to make you feel at home.
+                            Born from a deep passion for exceptional coffee and fresh, locally sourced ingredients, we
+                            are your sanctuary in the bustling city.
+                        </p>
+                        <p class="text-cafe-wood/90 text-lg font-light leading-relaxed">
+                            Whether you're joining us for a slow weekend brunch, finding a cozy corner to work, or
+                            meeting friends for our artisan desserts, our warm, modern-rustic ambience provides the
+                            perfect backdrop for life's moments. We're more than a cafe; we're a community gathering
+                            spot where stories are shared and memories are made.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-24 bg-cafe-cream relative border-t border-cafe-wood/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 space-y-4">
+                    <p class="text-cafe-olive text-sm uppercase tracking-[0.2em] font-semibold">Crafted With Love</p>
+                    <h2 class="font-serif text-4xl md:text-5xl text-cafe-woodDark">Our Menu</h2>
+                    <div class="w-12 h-[2px] bg-cafe-gold mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+
+                    <!-- Category: Coffees & Beverages -->
+                    <div>
+                        <h3 class="font-serif text-3xl text-cafe-woodDark border-b border-cafe-woodDark/10 pb-4 mb-8">
+                            Beverages & Smoothies</h3>
+                        <div class="space-y-8">
+                            <!-- item -->
+                            <div class="group cursor-pointer">
+                                <div class="flex justify-between items-baseline mb-2">
+                                    <h4
+                                        class="font-sans text-lg text-cafe-woodDark font-medium group-hover:text-cafe-olive transition-colors">
+                                        Chocolate Banana Smoothie</h4>
+                                    <div class="flex-grow border-b border-dotted border-cafe-wood/30 mx-4"></div>
+                                    <span class="font-serif text-lg font-semibold text-cafe-woodDark">₹299</span>
+                                </div>
+                                <p class="text-cafe-wood text-sm font-light">Rich chocolate and fresh banana blended to
+                                    perfection.</p>
+                            </div>
+                            <!-- item -->
+                            <div class="group cursor-pointer">
+                                <div class="flex justify-between items-baseline mb-2">
+                                    <h4
+                                        class="font-sans text-lg text-cafe-woodDark font-medium group-hover:text-cafe-olive transition-colors">
+                                        Peanut Butter & Banana Smoothie</h4>
+                                    <div class="flex-grow border-b border-dotted border-cafe-wood/30 mx-4"></div>
+                                    <span class="font-serif text-lg font-semibold text-cafe-woodDark">₹299</span>
+                                </div>
+                                <p class="text-cafe-wood text-sm font-light">Creamy peanut butter mixed with ripe
+                                    bananas.</p>
+                            </div>
+                            <!-- item -->
+                            <div class="group cursor-pointer">
+                                <div class="flex justify-between items-baseline mb-2">
+                                    <h4
+                                        class="font-sans text-lg text-cafe-woodDark font-medium group-hover:text-cafe-olive transition-colors">
+                                        Oats and Banana Smoothie</h4>
+                                    <div class="flex-grow border-b border-dotted border-cafe-wood/30 mx-4"></div>
+                                    <span class="font-serif text-lg font-semibold text-cafe-woodDark">₹289</span>
+                                </div>
+                                <p class="text-cafe-wood text-sm font-light">A healthy blend of oats and banana for a
+                                    refreshing start.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category: Food & Bites -->
+                    <div>
+                        <h3 class="font-serif text-3xl text-cafe-woodDark border-b border-cafe-woodDark/10 pb-4 mb-8">
+                            Bites & Mains</h3>
+                        <div class="space-y-8">
+                            <!-- item -->
+                            <div
+                                class="group flex items-start space-x-4 cursor-pointer p-4 -ml-4 rounded-xl hover:bg-cafe-beige transition-colors duration-300">
+                                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2799&auto=format&fit=crop"
+                                    alt="Burger"
+                                    class="w-20 h-20 rounded-lg object-cover shadow-soft group-hover:scale-105 transition-transform">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-baseline mb-1">
+                                        <h4 class="font-sans text-lg text-cafe-woodDark font-medium">Chilli Cheese
+                                            Chicken Smash Burger</h4>
+                                        <span
+                                            class="font-serif text-lg font-semibold text-cafe-woodDark ml-4">₹399</span>
+                                    </div>
+                                    <p class="text-cafe-wood text-sm font-light">Juicy smashed chicken patty with melted
+                                        cheese and chilli.</p>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div
+                                class="group flex items-start space-x-4 cursor-pointer p-4 -ml-4 rounded-xl hover:bg-cafe-beige transition-colors duration-300">
+                                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2673&auto=format&fit=crop"
+                                    alt="Sandwich"
+                                    class="w-20 h-20 rounded-lg object-cover shadow-soft group-hover:scale-105 transition-transform">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-baseline mb-1">
+                                        <h4 class="font-sans text-lg text-cafe-woodDark font-medium">Achari Paneer
+                                            Sandwich</h4>
+                                        <span
+                                            class="font-serif text-lg font-semibold text-cafe-woodDark ml-4">₹319</span>
+                                    </div>
+                                    <p class="text-cafe-wood text-sm font-light">Tangy and spicy paneer filling in
+                                        toasted artisan bread.</p>
+                                </div>
+                            </div>
+
+                            <!-- item -->
+                            <div
+                                class="group flex items-start space-x-4 cursor-pointer p-4 -ml-4 rounded-xl hover:bg-cafe-beige transition-colors duration-300">
+                                <img src="https://images.unsplash.com/photo-1562967914-01efa7e87832?q=80&w=2673&auto=format&fit=crop"
+                                    alt="Chicken"
+                                    class="w-20 h-20 rounded-lg object-cover shadow-soft group-hover:scale-105 transition-transform">
+                                <div class="flex-grow">
+                                    <div class="flex justify-between items-baseline mb-1">
+                                        <h4 class="font-sans text-lg text-cafe-woodDark font-medium">Korean Fried
+                                            Chicken Popcorn</h4>
+                                        <span
+                                            class="font-serif text-lg font-semibold text-cafe-woodDark ml-4">₹279</span>
+                                    </div>
+                                    <p class="text-cafe-wood text-sm font-light">Crispy, bite-sized chicken tossed in
+                                        sweet and spicy Korean glaze.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="https://www.zomato.com/pune/olivias-cafe-and-bistro-pashan/order?v=o2" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-block px-10 py-4 bg-transparent border border-cafe-woodDark text-cafe-woodDark text-sm uppercase tracking-[0.2em] font-semibold hover:bg-cafe-woodDark hover:text-cafe-beige transition-colors shadow-sm">Order
+                        on Zomato</a>
+                </div>
+            </div>
+            <!-- Ambience / Gallery Section -->
+            <section id="gallery" class="py-24 bg-cafe-beige relative">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 space-y-4">
+                        <p class="text-cafe-olive text-sm uppercase tracking-[0.2em] font-semibold">Our Space</p>
+                        <h2 class="font-serif text-4xl md:text-5xl text-cafe-woodDark">The Ambience</h2>
+                        <div class="w-12 h-[2px] bg-cafe-gold mx-auto mt-6"></div>
+                    </div>
+
+                    <!-- Masonry-style Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Image 1 -->
+                        <div
+                            class="relative overflow-hidden rounded-xl shadow-soft group aspect-square lg:col-span-2 lg:row-span-2">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2787&auto=format&fit=crop"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                alt="Cafe Interior Seats">
+                            <div
+                                class="absolute inset-0 bg-cafe-woodDark/0 group-hover:bg-cafe-woodDark/20 transition-colors duration-500">
+                            </div>
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="relative overflow-hidden rounded-xl shadow-soft group aspect-square">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=2787&auto=format&fit=crop"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                alt="Latte Art">
+                            <div
+                                class="absolute inset-0 bg-cafe-woodDark/0 group-hover:bg-cafe-woodDark/20 transition-colors duration-500">
+                            </div>
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="relative overflow-hidden rounded-xl shadow-soft group aspect-square">
+                            <img src="https://images.unsplash.com/photo-1627582522513-33923fc82d61?q=80&w=2787&auto=format&fit=crop"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                alt="Cozy Corner">
+                            <div
+                                class="absolute inset-0 bg-cafe-woodDark/0 group-hover:bg-cafe-woodDark/20 transition-colors duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section id="testimonials" class="py-24 bg-cafe-woodDark text-cafe-beige relative">
+                <div
+                    class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=2787&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay">
+                </div>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="text-center mb-16 space-y-4">
+                        <p class="text-cafe-goldSoft text-sm uppercase tracking-[0.2em] font-semibold">Word on the
+                            Street</p>
+                        <h2 class="font-serif text-4xl md:text-5xl">Guest Love</h2>
+                        <div class="w-12 h-[2px] bg-cafe-gold mx-auto mt-6"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center pt-8">
+                        <!-- Review 1 -->
+                        <div
+                            class="p-8 bg-cafe-woodDark border border-cafe-beige/10 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                            <div class="flex justify-center text-cafe-goldSoft mb-4">
+                                ★★★★★
+                            </div>
+                            <p class="font-serif italic text-lg mb-6 text-cafe-beige/90">"Absolutely beautiful interior!
+                                The wood tones and soft lighting make you want to stay for hours. Best brunch spot in
+                                the city."</p>
+                            <p class="font-sans text-xs uppercase tracking-widest text-cafe-goldSoft">— Sarah M.</p>
+                        </div>
+                        <!-- Review 2 -->
+                        <div
+                            class="p-8 bg-cafe-beige text-cafe-woodDark border border-cafe-beige/10 rounded-2xl shadow-xl transform md:-translate-y-4 hover:-translate-y-6 transition-transform duration-300 relative">
+                            <div class="absolute -top-4 right-8 text-6xl text-cafe-goldSoft/30 font-serif">"</div>
+                            <div class="flex justify-center text-cafe-olive mb-4">
+                                ★★★★★
+                            </div>
+                            <p class="font-serif italic text-lg mb-6">"The signature latte is incredible. The aesthetic
+                                is perfect for working or catching up with friends. Very Instagrammable!"</p>
+                            <p class="font-sans text-xs uppercase tracking-widest text-cafe-olive">— James T.</p>
+                        </div>
+                        <!-- Review 3 -->
+                        <div
+                            class="p-8 bg-cafe-woodDark border border-cafe-beige/10 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                            <div class="flex justify-center text-cafe-goldSoft mb-4">
+                                ★★★★★
+                            </div>
+                            <p class="font-serif italic text-lg mb-6 text-cafe-beige/90">"So cozy and warm. The staff is
+                                lovely and the fresh pastries are to die for. You really feel the passion here."</p>
+                            <p class="font-sans text-xs uppercase tracking-widest text-cafe-goldSoft">— Emily R.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location & Contact -->
+            <section id="contact" class="py-24 bg-cafe-cream">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                        <!-- Form -->
+                        <div class="space-y-8">
+                            <div>
+                                <p class="text-cafe-olive text-sm uppercase tracking-[0.2em] font-semibold mb-3">Join Us
+                                </p>
+                                <h2 class="font-serif text-4xl md:text-5xl text-cafe-woodDark mb-6">Reserve Your Table
+                                </h2>
+                                <p class="text-cafe-wood font-light text-lg">We'd love to host you. Drop us a line or
+                                    use our form to book a cozy spot.</p>
+                            </div>
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <input type="text" placeholder="Name"
+                                        class="w-full bg-transparent border-b border-cafe-wood/30 py-3 text-cafe-woodDark placeholder-cafe-wood focus:outline-none focus:border-cafe-olive transition-colors font-light">
+                                    <input type="email" placeholder="Email"
+                                        class="w-full bg-transparent border-b border-cafe-wood/30 py-3 text-cafe-woodDark placeholder-cafe-wood focus:outline-none focus:border-cafe-olive transition-colors font-light">
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <input type="date"
+                                        class="w-full bg-transparent border-b border-cafe-wood/30 py-3 text-cafe-woodDark placeholder-cafe-wood focus:outline-none focus:border-cafe-olive transition-colors font-light">
+                                    <input type="time"
+                                        class="w-full bg-transparent border-b border-cafe-wood/30 py-3 text-cafe-woodDark placeholder-cafe-wood focus:outline-none focus:border-cafe-olive transition-colors font-light">
+                                </div>
+                                <select
+                                    class="w-full bg-transparent border-b border-cafe-wood/30 py-3 text-cafe-woodDark focus:outline-none focus:border-cafe-olive transition-colors font-light">
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>5+ Guests</option>
+                                </select>
+                                <button type="submit"
+                                    class="mt-8 px-10 py-4 bg-cafe-woodDark text-cafe-beige text-sm uppercase tracking-[0.2em] font-semibold hover:bg-cafe-wood transition-colors shadow-soft w-full">Request
+                                    Reservation</button>
+                            </form>
+                        </div>
+
+                        <!-- Map/Info -->
+                        <div class="space-y-8">
+                            <div class="w-full h-64 md:h-80 bg-cafe-beige/50 rounded-xl overflow-hidden shadow-soft">
+                                <!-- Embedded map -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1648937!2d73.7933274!3d18.551703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc902f12693%3A0xafb8d7022a951af7!2sOlivia&#39;s%20Cafe%20and%20Bistro!5e0!3m2!1sen!2sus!4v1716301234567!5m2!1sen!2sus"
+                                    width="100%" height="100%" style="border:0; filter: grayscale(50%) sepia(30%);"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-cafe-woodDark">
+                                <div>
+                                    <h4 class="font-serif text-xl border-b border-cafe-wood/10 pb-2 mb-4">Location</h4>
+                                    <p class="text-sm font-light leading-relaxed">Shop 8, Balewadi High Street<br>Pune,
+                                        Maharashtra 411045</p>
+                                    <p class="text-sm font-light mt-4">+91 98765 43210</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-xl border-b border-cafe-wood/10 pb-2 mb-4">Hours</h4>
+                                    <p class="text-sm font-light leading-relaxed">Mon - Fri: 8am - 10pm<br>Sat - Sun:
+                                        9am - 11pm</p>
+                                    <a href="#"
+                                        class="inline-block mt-4 text-sm uppercase tracking-widest text-cafe-olive hover:text-cafe-woodDark transition-colors font-medium">Follow
+                                        on Instagram →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-cafe-woodDark py-12 border-t border-cafe-beige/10">
+                <div
+                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-cafe-beige/60">
+                    <div class="font-serif text-2xl tracking-wider text-cafe-beige mb-4 md:mb-0">
+                        Olivia's
+                    </div>
+                    <div class="text-sm font-light text-center md:text-left mb-4 md:mb-0">
+                        &copy; 2024 Olivia's Cafe and Bistro. All Rights Reserved.
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#"
+                            class="hover:text-cafe-goldSoft transition-colors text-sm uppercase tracking-widest">Ig</a>
+                        <a href="#"
+                            class="hover:text-cafe-goldSoft transition-colors text-sm uppercase tracking-widest">Fb</a>
+                    </div>
+                </div>
+            </footer>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
